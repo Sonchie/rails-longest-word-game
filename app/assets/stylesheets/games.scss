@@ -1,0 +1,43 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.letters-container {
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 1fr;
+  border: 2px dotted grey;
+
+}
+
+.letter {
+  // grid-row: 1 / span 1;
+  // grid-column: 1 /span 1;
+  height: 50px;
+  width: 50px;
+  border: 2px solid grey;
+  border-radius: 2px;
+  box-shadow: 1px 2px 2px grey;
+  padding: 10px;
+  background-color: #0095df;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+}
+
+.create-word {
+  padding: 20px 10px 10px 0px;
+}
+
+#button {
+  background-color: #0095df;
+  border-radius: 4px;
+  background-color: #0095df;
+  margin: 10px;
+  padding: 10px;
+}
+
+#user-input {
+  border: 2px solid grey;
+}

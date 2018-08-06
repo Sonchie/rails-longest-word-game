@@ -1,0 +1,21 @@
+<h1>Worlds Longest Word Game</h1>
+<p>To play the game submit the longest word you can made up for teh letters below.</p>
+
+<div class="letters-container">
+  <% @random.each do |letter| %>
+    <div class="letter"> <%= letter %></div>
+  <% end %>
+</div>
+
+
+<div class="create-word">
+  <form action="/score" method="post">
+    <div class = "input">
+      <label for="user-input">Your longest word:</label>
+      <input type="text" id="user-input" name="user_input">
+    </div>
+    <div class="button">
+      <button id="button" type="submit">Play</button>
+    </div>
+  </form>
+</div>
